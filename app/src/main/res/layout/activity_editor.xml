@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2016 The Android Open Source Project
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+          http://www.apache.org/licenses/LICENSE-2.0
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+
+<com.hendraanggrian.widget.RevealFrameLayout android:id="@+id/revealLayout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".StudentEditor">
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <android.support.design.widget.CoordinatorLayout
+        android:id="@+id/layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="?colorAccent">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <LinearLayout
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:id="@+id/root_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="@dimen/activity_margin"
+                tools:context=".StudentEditor">
+
+                <ImageView
+                    android:id="@+id/profileImageView"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_account_circle_black" />
+
+
+                <Button
+                    android:id="@+id/pick_image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="70dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:padding="10dp"
+                    android:text="Bild hochladen"
+                    android:textColor="#FFF"
+                    android:textSize="16dp"
+                    android:background="@color/editorColorPrimary"
+                    />
+
+
+                <!-- Overview  -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <!-- Name -->
+                    <TextView
+                        android:text="@string/student_name"
+                        style="@style/CategoryStyle" />
+
+                    <!-- Inputfelder -->
+                    <LinearLayout
+                        android:layout_height="wrap_content"
+                        android:layout_width="0dp"
+                        android:layout_weight="2"
+                        android:paddingLeft="4dp"
+                        android:orientation="vertical">
+
+
+                        <EditText
+                            android:id="@+id/edit_student_vorname"
+                            android:hint="@string/hint_student_vorname"
+                            android:inputType="textCapWords"
+                            style="@style/EditorFieldStyle" />
+
+
+                        <EditText
+                            android:id="@+id/edit_student_nachname"
+                            android:hint="@string/hint_student_nachname"
+                            android:inputType="textCapWords"
+                            style="@style/EditorFieldStyle" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <!-- Fachbereich -->
+                <LinearLayout
+                    android:id="@+id/studentFachbereich"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:text="@string/category_fachbereich"
+                        style="@style/CategoryStyle" />
+
+                    <LinearLayout
+                        android:layout_height="wrap_content"
+                        android:layout_width="0dp"
+                        android:layout_weight="2"
+                        android:paddingLeft="4dp"
+                        android:orientation="vertical">
+
+
+                        <EditText
+                            android:id="@+id/edit_student_fachbereich"
+                            android:hint="@string/hint_student_fachbereich"
+                            android:inputType="textCapWords"
+                            style="@style/EditorFieldStyle" />
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <!-- Studiengang -->
+                <LinearLayout
+                    android:id="@+id/studentStudiengang"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:text="@string/category_studiengang"
+                        style="@style/CategoryStyle" />
+
+                    <LinearLayout
+                        android:layout_height="wrap_content"
+                        android:layout_width="0dp"
+                        android:layout_weight="2"
+                        android:paddingLeft="4dp"
+                        android:orientation="vertical">
+
+
+                        <EditText
+                            android:id="@+id/edit_student_studiengang"
+                            android:hint="@string/hint_student_studiengang"
+                            android:inputType="textCapWords"
+                            style="@style/EditorFieldStyle" />
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <!-- Wohnort -->
+                <LinearLayout
+                    android:id="@+id/studentWohnort"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:text="@string/category_wohnort"
+                        style="@style/CategoryStyle" />
+
+                    <LinearLayout
+                        android:layout_height="wrap_content"
+                        android:layout_width="0dp"
+                        android:layout_weight="2"
+                        android:paddingLeft="4dp"
+                        android:orientation="vertical">
+
+
+                        <EditText
+                            android:id="@+id/edit_student_wohnort"
+                            android:hint="@string/hint_student_wohnort"
+                            android:inputType="textCapWords"
+                            style="@style/EditorFieldStyle" />
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <!-- Telefon -->
+                <LinearLayout
+                    android:id="@+id/studentTelefon"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:text="@string/category_telefon"
+                        style="@style/CategoryStyle" />
+
+                    <LinearLayout
+                        android:layout_height="wrap_content"
+                        android:layout_width="0dp"
+                        android:layout_weight="2"
+                        android:paddingLeft="4dp"
+                        android:orientation="vertical">
+
+
+                        <EditText
+                            android:id="@+id/edit_student_telefon"
+                            android:hint="@string/hint_student_telefon"
+                            android:inputType="phone"
+                            style="@style/EditorFieldStyle" />
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+                <!-- Email  -->
+                <LinearLayout
+                    android:id="@+id/studentEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:text="@string/category_email"
+                        style="@style/CategoryStyle" />
+
+                    <LinearLayout
+                        android:layout_height="wrap_content"
+                        android:layout_width="0dp"
+                        android:layout_weight="2"
+                        android:paddingLeft="4dp"
+                        android:orientation="vertical">
+
+
+                        <EditText
+                            android:id="@+id/edit_student_email"
+                            android:hint="@string/hint_student_email"
+                            android:inputType="textEmailAddress"
+                            style="@style/EditorFieldStyle" />
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <!-- Geschlecht -->
+                <LinearLayout
+                    android:id="@+id/container_geschlecht"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+
+                    <TextView
+                        android:text="@string/category_geschlecht"
+                        style="@style/CategoryStyle" />
+
+
+                    <LinearLayout
+                        android:layout_height="wrap_content"
+                        android:layout_width="0dp"
+                        android:layout_weight="2"
+                        android:orientation="vertical">
+
+                        <!-- drop-down spinner -->
+                        <Spinner
+                            android:id="@+id/spinner_geschlecht"
+                            android:layout_height="48dp"
+                            android:layout_width="wrap_content"
+                            android:paddingRight="16dp"
+                            android:spinnerMode="dropdown"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </android.support.design.widget.CoordinatorLayout>
+</com.hendraanggrian.widget.RevealFrameLayout>

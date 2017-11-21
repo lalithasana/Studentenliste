@@ -1,0 +1,84 @@
+<resources>
+    <string name="app_name">Studentenliste</string>
+
+    <string name="action_delete_all_entries">Alle Studenten löschen</string>
+
+    <string name="empty_title_text">Es ist noch kein Eintrag vorhanden</string>
+
+    <string name="empty_view_subtitle_text">Füge einen neuen Studenten hinzu!</string>
+    <string name="empty_view_subtitle_text2">Es ist noch kein Student vorhanden.</string>
+
+    <string name="editor_activity_title_new_student">Student hinzufügen</string>
+
+    <string name="editor_activity_title_edit_student">Student bearbeiten</string>
+
+    <string name="action_save">Speichern</string>
+
+    <string name="action_delete">Löschen</string>
+
+    <string name="editor_insert_student_successful">Student gespeichert</string>
+
+    <string name="editor_insert_student_failed">Probleme beim Speichern des Studenten!</string>
+
+    <string name="editor_update_student_successful">Student bearbeitet</string>
+
+    <string name="editor_update_student_failed">Probleme beim Bearbeiten des Studenten!</string>
+
+    <string name="unsaved_changes_dialog_msg">Änderungen verwerfen und Bearbeitung abbrechen?</string>
+
+    <string name="discard">Verwerfen</string>
+
+    <string name="keep_editing">Weiter bearbeiten</string>
+
+    <string name="editor_delete_student_successful">Student gelöscht</string>
+
+    <string name="editor_delete_student_failed">Probleme beim Löschen des Studenten</string>
+
+    <string name="delete_dialog_msg">Diesen Studenten löschen?</string>
+
+    <string name="delete">Löschen</string>
+
+    <string name="cancel">Abbruch</string>
+
+    <string name="student_name">Name</string>
+
+    <string name="category_geschlecht">Geschlecht</string>
+
+    <string name="category_fachbereich">Fachbereich</string>
+
+    <string name="category_studiengang">Studiengang</string>
+
+    <string name="category_wohnort">Wohnort</string>
+
+    <string name="category_telefon">Telefon</string>
+
+    <string name="category_email">Email</string>
+
+    <string name="hint_student_vorname">Vorname</string>
+
+    <string name="hint_student_fachbereich">Fachbereich</string>
+
+    <string name="hint_student_studiengang">Studiengang</string>
+
+    <string name="hint_student_wohnort">Wohnort</string>
+
+    <string name="hint_student_telefon">Telefon</string>
+
+    <string name="hint_student_email">Email</string>
+
+    <string name="hint_student_nachname">Nachname</string>
+
+    <string name="geschlecht_unbekannt">Unbekannt</string>
+
+    <string name="geschlecht_maennlich">Männlich</string>
+
+    <string name="geschlecht_weiblich">Weiblich</string>
+
+    <string name="unbekannt">Unbekannt</string>
+
+    <string name="menu_search">Suche</string>
+    <string name="search_hint">"Student suchen" </string>
+
+    <string name="uploadImages">Lade ein Bild hoch</string>
+    <string name="action_pic">Bilder</string>
+</resources>
